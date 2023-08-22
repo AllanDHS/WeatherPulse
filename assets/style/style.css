@@ -39,6 +39,15 @@ body {
     margin: 20px;
 }
 
+.container ul li h1 {
+    color: #000;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 /* Icone Favoris */
 .container #star {
     margin-left: 20px;
@@ -116,7 +125,7 @@ body {
 
 /* Container Infos Bottom */
 
-.infos-bottom{
+.infos-bottom {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
@@ -169,6 +178,7 @@ body {
     border-radius: 0 0 15px 15px;
     width: 100%;
     height: 95px;
+    
 }
 
 #title {
@@ -183,7 +193,7 @@ body {
 }
 
 
-.container-heures  p {
+.container-heures p {
     color: #000;
     font-family: 'Inter', sans-serif;
     font-size: 15px;
@@ -192,4 +202,3 @@ body {
     line-height: normal;
     text-align: center;
 }
-
