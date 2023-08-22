@@ -1,14 +1,22 @@
+/* Import de Fonts */
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+/* Reset CSS */
 * {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
+/* Body */
 body {
     background-color: #3E3E3E;
-    
+
 }
 
+/* Design Container */
 .container {
     width: 1077px;
     height: 852px;
@@ -16,46 +24,138 @@ body {
     background-image: url(/assets/img/Jour.jpeg);
     background-size: cover;
     background-position: center;
-    box-shadow: 0px 4px 43px 37px rgba(170,170,170,0.25);
+    box-shadow: 0px 4px 43px 37px rgba(170, 170, 170, 0.25);
     margin: auto;
+    margin-top: 50px;
 }
 
+/* TopMenu */
 .container ul {
     display: flex;
     justify-content: space-between;
 }
 
 .container ul li {
-    margin: 10px;
+    margin: 20px;
 }
 
-.container #star{
-    margin-left: 10px;
+/* Icone Favoris */
+.container #star {
+    margin-left: 20px;
 }
 
-.container .search{
+/* Barre de recherche */
+.container .search {
     position: relative;
     text-align: center;
-    
+
 }
 
-.container .search input{
+.container .search input {
     width: 350px;
     height: 40px;
     border-radius: 0 0 15px 15px;
     border: none;
-    background:none;
+    background: none;
     border-bottom: 4px solid #000000;
     font-size: 20px;
 }
 
-.container .search input:focus{
+.container .search input:focus {
     outline: none;
 }
 
-.container .search img{
+.container .search img {
     position: absolute;
     bottom: 10px;
     right: 380px;
 }
 
+/* Container Météo */
+
+.container-meteo {
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.container-meteo p {
+    padding: 30px;
+}
+
+.container-meteo #city {
+    color: #000;
+    font-family: 'Rubik', sans-serif;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.container-meteo #temp {
+    color: #000;
+    font-family: ADLaM Display;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.container-meteo #desc {
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Container Infos Bottom */
+
+.infos-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Container Humidite */
+
+.container-humidite {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 10px;
+}
+
+.container-humidite p {
+    margin-left: 20px;
+    color: #FFF;
+    font-family: ADLaM Display;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Container Vent */
+
+.container-vent {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-left: 10px;
+}
+
+.container-vent p {
+    margin-right: 20px;
+    color: #FFF;
+    font-family: ADLaM Display;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
