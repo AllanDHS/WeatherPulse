@@ -14,6 +14,11 @@ search.addEventListener('focusout', function () {
     let searchValue = search.value;
 
 
+    containerHeures.innerHTML = "";
+
+
+
+
     // let api = {
     //     key: "746e0549542a6b1f643fb945c9383cf8",
     //     base: "https://api.openweathermap.org/hours/2.5/"
@@ -47,8 +52,14 @@ search.addEventListener('focusout', function () {
                         
                     </div>`
                     console.log()
+
+                    
+                
+
             });
 
-        });
-})
+            
 
+        });
+
+});
